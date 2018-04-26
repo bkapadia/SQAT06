@@ -47,3 +47,19 @@
         Repeat step 9 and step 10 again and again until finished all the code of the test case.
    
 This readme is brief introduction what I learnt from class to let you know how is selenium automation test is going.
+
+5. Pushing code to github at your project repository:
+ 1) Go to github find SQAT06 project:
+   Fork copy of IzzatBamieh/SQAT06 to your account.
+ 2) Clone your account project SQAT06 URL link where store your code.
+ 3) Use ‘git remote add’ command line to remote adding origin master account:
+    ‘git remote add jessica https://github.com/jessicashen66/SQAT06.git’
+    Using command line ‘git remote –v’ 
+    to confirm if your account is added successfully
+ 4) Use ‘git add –p’ command line to add modified contents
+    in the working tree interactively to the index.
+ 5) User ‘git commit –m“message” command line to add a message for the commit.
+ 6) User ‘git push jessica master’ command line to push commits made on your local 
+    to a remote repository.  
+ 7) Go to github your account project repository after git push successfully  
+    check Code/Commits, a new pushed commits should be listed.
