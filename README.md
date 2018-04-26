@@ -29,7 +29,9 @@
         ‘selenium-standalone install’
         ‘selenium-standalone start’
     2) Register a github account at website 'github.com'
-    3) Search ‘SQAT06’ project in the github website. Using key word instructor name 'IzzatBamieh' to find ‘SQAT06’ project and then clone ‘SIQAT06’ project code link which remote URL should use.
+    3) Search ‘SQAT06’ project in the github website. 
+       Using key word instructor name 'IzzatBamieh' to find ‘SQAT06’ project, 
+       and then clone ‘SIQAT06’ project code link which remote URL should use.
     4) Clone ‘SQAT06’ project code to your local machine by using cmd: 
        ‘git clone  https://github.com/IzzatBamieh/SQAT06.git’. 
         Using command ‘dir’ to check SQAT06 is cloned successfully 
@@ -41,6 +43,8 @@
     9) Select web_basic.js, edit the code line by line. 
        When a line code is done, go to next step.
     10) Run JavaScript by using command ‘node web_basic.js’ to run test case
-    11) Once run first line JavaScript successfully, then edit next line code and run again. Repeat step 9 and step 10 again and again until finished all the code of the test case.
+    11) Once run first line JavaScript successfully, 
+        then edit next line code and run again.     
+        Repeat step 9 and step 10 again and again until finished all the code of the test case.
    
 This readme is brief introduction what I learnt from class to let you know how is selenium automation test is going.
