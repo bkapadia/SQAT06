@@ -1,3 +1,5 @@
+Assignment 1
+
 1. Test Purpose: This is atutomation test to test web application ‘Figure 1’ register page works functionally by using automation test tool Selenium.
  
 2. Test Web Application name: Figure 1
