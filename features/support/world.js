@@ -10,8 +10,8 @@ class CustomWorld {
     this.attach = attach;
   }
 
-  goToWebsite() {
-    return this.browser.init().url('https://app.figure1.com/account/register');
+  goToWebsite(url) {
+    return this.browser.init().url(url);
   }
 }
 
