@@ -45,13 +45,6 @@ Then('I should see unsuccessful sign up result', function(callback) {
   })
 })
 
-Given('I launch to figure1 register page', function( callback) {
-  this.browser
-    .init()
-    .url('https://app.figure1.com/account/register').then(function() {
-      callback();
-    })
-})
 When('I enter invalid Username on sign up page', function(callback) {
   this.browser
     .waitForVisible('.register-page__username-input')
@@ -72,26 +65,6 @@ When('I enter invalid Username on sign up page', function(callback) {
   }).catch(function(error){
     callback(error);
   })
-})
-
-Then('I should see error message', function(callback) {
-  this.browser
-    .waitForVisible('.invalid-field')
-    .getText('.invalid-field').then(function(result) { 
-    result.should.equal("Username must be at least 4 characters long (accepts letters, numbers and dashes)");
-     
-     callback();
-  }).catch(function(error){
-    callback(error);
-  })
-})
-
-Given('I launch to fsigure1 register window', function( callback) {
-  this.browser
-    .init()
-    .url('https://app.figure1.com/account/register').then(function() {
-      callback();
-    })
 })
 
 When('I type invalid Email Address on sign up page', function(callback) {
@@ -129,14 +102,6 @@ Then('I should see sign up is failed', function(callback) {
   })
 })
 
-Given('I navigate to figure1 register window', function( callback) {
-  this.browser
-    .init()
-    .url('https://app.figure1.com/account/register').then(function() {
-      callback();
-    })
-})
-
 When('I do not select the check box on sign up page', function(callback) {
   this.browser
     .waitForVisible(".register-page__username-input")
@@ -169,14 +134,6 @@ Then('I should not see sign up result', function(callback) {
   }).catch(function(error){
     callback(error);
   })
-})
-
-Given('I navigate to figure1 register page', function( callback) {
-  this.browser
-    .init()
-    .url('https://app.figure1.com/account/register').then(function() {
-      callback();
-    })
 })
 
 When('I do not select the dropdown list on sign up page', function(callback) {
@@ -213,13 +170,6 @@ Then('I should not go to next page', function(callback) {
   })
 })
 
-Given('I go to figure1 register page again', function( callback) {
-  this.browser
-  .init()
-  .url('https://app.figure1.com/account/register').then(function() {
-    callback();
-  })
-})
 When('I input valid credentials on sign up page fields', function(callback) {
  this.browser
   .waitForVisible(".register-page__username-input")
@@ -256,13 +206,6 @@ Then('I should see successful sign up result', function(callback) {
 })
 })
 
-Given('I nevigate to figure1 register page', function( callback) {
-  this.browser
-  .init()
-  .url('https://app.figure1.com/account/register').then(function() {
-    callback();
-  })
-})
 When('I enter valid credentials on register page', function(callback) {
  this.browser
   .waitForVisible(".register-page__username-input")
@@ -298,18 +241,3 @@ Then('I should sign up successful', function(callback) {
   callback(error);
 })
 })
-// Then('I should sign up successful', function(callback) {
-//   this.browser
-//    .waitForVisible('.button-squared.light-grey-darker-fill', 5000)
-//    .isVisivle('.button-squared.light-grey-darker-fill').then(function(result){
-//   //   result.should.equal("Confirm");
-//      if (reuslt == "Confirm")
-//       console.log("pass")
-//     }else {
-//     throw Errow ("Failled")
-// }
-//     callback();
-//   }).catch(function(error){
-//   callback(error);
-// })
-// })
