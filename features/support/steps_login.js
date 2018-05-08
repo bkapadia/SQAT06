@@ -48,3 +48,29 @@ When('I enter invalid Password on login page', function(callback) {
     callback(error);
   })
 })
+
+
+
+When('I enter valid Username and Password on login page', function(callback) {
+    this.browser
+      .waitForVisible('.login-page__email-input')
+      .setValue('.login-page__email-input','jessicashen66@gmail.com')
+      .setValue('.login-page__password-input','300923924')
+      .click('.login-page__submit-button')
+      .then(function() { 
+       callback();
+    }).catch(function(error){
+      callback(error);
+    })
+  })
+
+  Then('I should see successful login', function(callback) {
+    this.browser
+     .waitForVisible('.email-confirmation-intro', 5000)
+     .isVisible('.email-confirmation-intro').then(function(result){
+      result.should.to.be.true;
+      callback();
+    }).catch(function(error){
+    callback(error);
+  })
+  })
